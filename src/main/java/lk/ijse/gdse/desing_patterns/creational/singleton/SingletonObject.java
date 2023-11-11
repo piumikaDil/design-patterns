@@ -3,17 +3,17 @@ package lk.ijse.gdse.desing_patterns.creational.singleton;
 //Connect : piumikadil@gmail.com
 
 public class SingletonObject {
-    private static SingletonObject instance = new SingletonObject();
+    private static final SingletonObject instance = new SingletonObject();
 
-    private SingletonObject(){
+    private SingletonObject() {
 
     }
 
-    public static SingletonObject getInstance(){
-        return  instance;
+    public static SingletonObject getInstance() {
+        return instance;
     }
 
-    public  void showMessage(){
+    public void showMessage() {
         System.out.println("Hello Singleton DP!");
     }
 }
